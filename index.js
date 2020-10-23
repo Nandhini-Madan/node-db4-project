@@ -4,13 +4,13 @@ const receipe=require("./routers/Receipe")
 const instructions=require("./routers/Instructions")
 const ingredients=require("./routers/Ingredients")
 const server=express()
-const port=process.env.PORT||4000
+const port=process.env.PORT||5000
 
 server.use(helmet())
 server.use(express.json())
 server.use(receipe)
-server.use(instructions)
-server.use(ingredients)
+//server.use(instructions)
+//server.use(ingredients)
 
 
 //error fn
